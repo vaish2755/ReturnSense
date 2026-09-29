@@ -1,0 +1,6 @@
+hindsight-client==0.10.1
+python-dotenv
+pandas==3.0.6
+requests==2.34.2
+groq
+streamlit
