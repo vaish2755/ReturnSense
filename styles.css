@@ -1,0 +1,412 @@
+/* ========================================================
+   MATTE BLACK & CRISP WHITE HIGH-CONTRAST THEME
+======================================================== */
+.stApp {
+    background-color: #0c0c0e !important; /* Deep matte charcoal/black */
+    color: #f4f4f5 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.block-container {
+    max-width: 1320px;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+/* Typography - Maximum Contrast */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+p, span, label {
+    color: #e4e4e7; /* Bright, clean readable light text */
+}
+
+/* ========================================================
+   TOP HEADER BAR
+======================================================== */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    margin-bottom: 24px;
+    background: #16161a;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 9px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0c0c0e;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+.brand-name span {
+    color: #60a5fa; /* Crisp light blue accent */
+}
+
+.brand-subtitle {
+    color: #a1a1aa;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.memory-status {
+    background: #1f1f23;
+    border: 1px solid #3f3f46;
+    border-radius: 20px;
+    padding: 6px 14px;
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e; /* Crisp green indicator */
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+}
+
+/* ========================================================
+   BUTTONS (High Contrast White & Black)
+======================================================== */
+.stButton > button {
+    width: 100%;
+    height: 48px;
+    background-color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 9px !important;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.12);
+    transition: all 0.15s ease;
+}
+
+/* Force inner text & emojis to deep solid black */
+.stButton > button * {
+    color: #000000 !important;
+    font-weight: 800 !important;
+    font-size: 0.92rem !important;
+}
+
+.stButton > button:hover {
+    background-color: #e4e4e7 !important;
+    border-color: #e4e4e7 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2);
+}
+
+.stButton > button:hover * {
+    color: #000000 !important;
+}
+/* ========================================================
+   METRIC & CONTENT CARDS
+======================================================== */
+.metric-card {
+    background: #16161a;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+.metric-value {
+    color: #ffffff;
+    font-size: 1.65rem;
+    font-weight: 800;
+}
+
+.metric-label {
+    color: #a1a1aa;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-top: 4px;
+}
+
+.card {
+    background: #16161a;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 14px;
+}
+
+.card-title {
+    color: #60a5fa;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin-bottom: 4px;
+}
+
+.card-heading {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+/* Details Table Rows */
+.return-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #27272a;
+}
+
+.return-row:last-child {
+    border-bottom: none;
+}
+
+.return-label {
+    color: #a1a1aa;
+    font-size: 0.84rem;
+}
+
+.return-value {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.reason-badge {
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+/* Memory Box */
+.memory-number {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.memory-text {
+    color: #a1a1aa;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+}
+
+.memory-line {
+    padding: 9px 0;
+    border-bottom: 1px solid #27272a;
+}
+
+.memory-line:last-child {
+    border-bottom: none;
+}
+
+.memory-label {
+    color: #60a5fa;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.memory-value {
+    color: #e4e4e7;
+    font-size: 0.82rem;
+    margin-top: 3px;
+}
+
+/* ========================================================
+   ANALYSIS RESULTS
+======================================================== */
+.analysis-header {
+    color: #60a5fa;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 22px;
+}
+
+.analysis-title {
+    color: #ffffff;
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+
+.main-pattern {
+    background: #16161a;
+    border: 1px solid #27272a;
+    border-left: 4px solid #ffffff;
+    border-radius: 12px;
+    padding: 18px 22px;
+}
+
+.main-pattern-label {
+    color: #a1a1aa;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.main-pattern-text {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.flash-card {
+    background: #16161a;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.flash-card-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.flash-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.flash-label {
+    color: #60a5fa;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.flash-headline {
+    color: #ffffff;
+    font-size: 1.02rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.flash-description {
+    color: #d4d4d8;
+    font-size: 0.84rem;
+    line-height: 1.6;
+}
+
+.recommendation-box {
+    background: #16161a;
+    border: 1px solid #3f3f46;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 110px;
+}
+
+.recommendation-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.recommendation-label {
+    color: #4ade80; /* Clear green */
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.recommendation-text {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.confidence-box {
+    background: #16161a;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 110px;
+}
+
+.confidence-label {
+    color: #a1a1aa;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.confidence-value {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* Streamlit Native Selectbox & Expanders */
+div[data-baseweb="select"] > div {
+    background-color: #16161a !important;
+    border: 1px solid #3f3f46 !important;
+    border-radius: 9px !important;
+}
+
+div[data-baseweb="select"] span {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+div[data-testid="stExpander"] {
+    background-color: #16161a !important;
+    border: 1px solid #27272a !important;
+    border-radius: 10px !important;
+}
+
+#MainMenu, header, footer {
+    visibility: hidden;
+}
